@@ -21,7 +21,7 @@ class Product(models.Model):
         return self.name
     
 class Order(models.Model):
-    class StatusChoices(models.TextField):
+    class StatusChoices(models.TextChoices):
         PENDING = 'Pending'
         CONFIRMED = 'Confirmed'
         CANCELLED = 'Cancelled'
